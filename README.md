@@ -8,7 +8,7 @@ A React application where users can:
 - Persist data using localStorage
 
 ## 🚀 Live Demo
-[Click here to see the live project](movie-book-self.vercel.app)
+[Click here to see the live project](https://movie-book-self.vercel.app/)
 
 ## 🛠 Technologies Used
 - React
