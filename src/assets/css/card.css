@@ -1,0 +1,58 @@
+.movie-card{
+    width: 200px;
+  background-color: #f5deb3;
+  border: 4px dashed #8b4513;
+  padding: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  font-family: "Special Elite", system-ui;
+  color: #2b1d0e;
+  text-align: center;
+  background-image: url("https://www.transparenttextures.com/patterns/old-wall.png");
+  background-size: cover;
+  position:relative;
+  clip-path: polygon(
+    10% 0%, 90% 0%, 100% 10%, 100% 90%,
+    90% 100%, 10% 100%, 0% 90%, 0% 10%
+  );
+  transition: transform 0.3s ease; 
+}
+.movie-card:hover{
+transform: scale(1.05) rotate(-1deg);
+}
+.movie-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+  filter: sepia(0.2) contrast(1.05);
+  margin-bottom: 10px;
+}
+
+
+.damga-btn {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  z-index: 2;
+}
+.movie-card.damgali::after {
+  content: "✔ FAVORİ";
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  transform: rotate(-20deg);
+  font-family: "Special Elite", serif;
+  font-size: 0.8rem;
+  color: crimson;
+  background: rgba(255, 228, 196, 0.8);
+  border: 2px solid crimson;
+  padding: 4px 8px;
+  border-radius: 6px;
+  box-shadow: 1px 1px 6px rgba(0,0,0,0.4);
+  z-index: 10;
+}
